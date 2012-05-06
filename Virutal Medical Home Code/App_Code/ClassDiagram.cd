@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="cls_Complaints">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEgAAAkAAAAAAAAAAAAAAAAAIEAAABAACAAAAAAAA=</HashCode>
+      <FileName>App_Code\BAL\cls_Complaints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cls_EmailMaster">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>LAAAAQAQADEABECBghoAAEIQQABgBRACIAAAACAAQAE=</HashCode>
+      <FileName>App_Code\BAL\Cls_EmailMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsAppointment">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAACAABQAAAAAAAEAIAAAAAbQCAIARCAACIABACQA=</HashCode>
+      <FileName>App_Code\BAL\clsAppointment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsChat">
+    <Position X="9.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQEAAAAAAIAAAAAAAAAAAQAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BAL\clsChat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsDoctor">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABYCAACQASBYgBAAAAAAgCAAADAAABAAAARCAAAAA=</HashCode>
+      <FileName>App_Code\BAL\clsDoctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsFeedBack">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAIAAAAAAAAABAAAAAAAABACAAAA=</HashCode>
+      <FileName>App_Code\BAL\clsFeedBack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsLogin">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AICQABADBCAQgAAAEAABACkGQCASABQCCUEFAAFAAAA=</HashCode>
+      <FileName>App_Code\BAL\clsLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsMails">
+    <Position X="20.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAQAAACEQBECBggAEAEIQQABgBYICAAAAACCAQAA=</HashCode>
+      <FileName>App_Code\BAL\clsMails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsManager">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAAAAAAQABAAgIAAAAAAAAAAABAAABBAABAAA=</HashCode>
+      <FileName>App_Code\BAL\clsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsReports">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAYAAAAAABAAIAAEAAAACAEABAAACBAghAAA=</HashCode>
+      <FileName>App_Code\BAL\clsReports.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsUser">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABACEAADSAEAACAEAAQgAgQQAAUABACgQAAAABAQEg=</HashCode>
+      <FileName>App_Code\BAL\clsUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="clsConnection">
+    <Position X="25.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DAL\clsConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualMedicalHome.DAL.SqlHelper" Collapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAACAAAAAACAEABAAAEAAgAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DAL\SQLHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VirtualMedicalHome.DAL.SqlHelperParameterCache">
+    <Position X="27.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAECAAIAAAAAAAARAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\DAL\SQLHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

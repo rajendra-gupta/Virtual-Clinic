@@ -1,0 +1,284 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+
+<style type="text/css">
+
+
+body {
+	font: 78%/1.5 arial, helvetica, serif;
+	background: url(images/Background2.jpg);
+	position: relative;
+	text-align: center;
+	padding: 0;
+	margin: 0em;
+}
+
+
+#container {
+	width:778px;
+	background: #2C79B4 url('images/BijjamIT.jpg') no-repeat;
+	text-align: left;
+	margin: 0 auto;
+        height: 83px;
+    }
+
+h1 {
+	
+	height:71;
+    }
+
+
+#nav, #nav ul {
+	border-left: 0 solid #006699;
+        border-right: 0 solid #006699;
+        border-top: 1px solid #006699;
+        border-bottom: 1px solid #006699;
+        float: left;
+	width: 778px;
+	    list-style: none;
+	    line-height: 1;
+	    background: #006699;
+	    font-weight: bold;
+	    padding: 0;
+	    margin: 0 0 1em 0;
+	    text-align:center;
+}
+
+
+#nav a {
+	display: block;
+	width: 8em;
+	width: 3.8em;
+	color: white;
+	text-decoration: none;
+	padding: 0.25em 1em;
+	
+}
+
+
+#nav li {
+	float: left;
+	padding: 0;
+	width: 6.6em;
+}
+
+#nav li ul {
+	position: absolute;
+	left: -999em;
+	height: auto;
+	width: 14.4em;
+	width: 13.9em;
+	font-weight: normal;
+	border-width: 0.25em;
+	margin: 0;
+}
+A.navlink {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #bebcbc; FONT-FAMILY: Tahoma; TEXT-DECORATION: none
+}
+.text1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 11px; COLOR: #bebcbc; FONT-FAMILY: Tahoma, Arial; TEXT-DECORATION: none
+}
+#nav li li {
+	padding-right: 1em;
+	width: 13em
+}
+
+#nav li ul a {
+	width: 13em;
+	width: 9em;
+}
+
+#nav li ul ul {
+	margin: -1.75em 0 0 14em;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {
+	left: auto;
+}
+
+#nav li:hover, #nav li.sfhover {
+	background: #336699;
+}
+
+
+
+
+    .style2
+    {
+        color: #FFFFFF;
+        background-color: #2C79B4;
+    }
+
+
+
+
+    .style3
+    {
+        color: #FFFFFF;
+        font-size: xx-large;
+    }
+
+
+
+
+</style>
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+sfHover = function() {
+	var sfEls = document.getElementById("nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+//--><!]]></script>
+<asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+<form id="form1" runat="server">
+<asp:scriptmanager ID="Scriptmanager1" runat="server"></asp:scriptmanager>
+
+<div id="container">
+<table>
+<tr>
+<td><h1 class="style3" >Virtual Medical Home</h1>
+</td>
+<td align="right">
+   <table width="120" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td >&nbsp;</td>
+                
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="35" height="14" align="center" valign="middle"><img src="images/home-small.jpg" width="11" height="11" /></td>
+<%--                <td width="35" align="center" valign="middle"><img src="images/login.jpg" width="11" height="11" /></td>
+                <td width="35" align="center" valign="middle"><img src="images/contact.jpg" width="11" height="9" /></td>
+--%>              </tr>
+              <tr>
+                <td  align="center" class="text1"><a href="../Default.aspx" class="navlink">Home</a></td>
+              <%--  <td align="center" class="text1"><a href="../AboutUs.aspx" class="navlink">AboutUs</a></td>
+              <td align="center" class="text1"><a href="../ContactUs.aspx" class="navlink">Contact</a></td>--%>
+              </tr>
+              </table>
+            </td>
+
+</tr>
+<tr>
+<td colspan="2">
+<ul id="nav">
+<li><a href="#">ManageProfile</a>
+<ul>
+			<li><a href="frmUpdateMyProfile.aspx">Update Profile</a></li>
+			
+			<li><a href="frmChangePassword.aspx" >Change Password</a></li>
+			</ul>
+	<li><a href="frmDoctorsAcceptancy.aspx">DoctorAcceptancy</a>
+		
+	</li>
+
+	
+		<%--<ul>
+			<li><a href="http://www.bijjamit.com/overview.asp">Over View</a></li>
+			
+			<li><a href="http://www.bijjamit.com/vision.asp" class="daddy">Our Vision</a>
+				
+			</li>
+			<li><a href="http://www.bijjamit.com/mission.asp">Our Mission</a></li>
+					</ul>--%>
+	</li>
+
+	
+
+		
+	
+<li><a href="#">Compalints</a>
+	<ul>
+			<li><a href="frmComplaints.aspx">Complaints</a></li>
+				</ul>	
+			</li>			
+					
+	
+	<li><a href="frmInBoxMails.aspx">Mails</a></li>
+		
+	<li><a href="frmOnlineChat.aspx">Chat</a></li>
+	
+	<li><a href="#">Reports</a>
+	<ul>
+				<li><a href="frmDoctorsReport.aspx">Doctors Report</a></li>
+
+			<li><a href="frmPatientsReport.aspx">Patients Report</a></li>
+						<li><a href="frmAppointmentsReport.aspx">Appointments Report</a></li>
+			<li><a href="frmLabReports.aspx">Lab Report</a></li>
+			<li><a href="frmPrescriptionsReport.aspx">Prescriptions Report</a></li>
+
+				</ul>	
+			</li>	
+<li><a href="../frmSignOut.aspx">SignOut</a></li>
+		
+	</li>
+</ul>
+</td>
+</tr>
+</table>
+
+
+
+
+</div>
+
+<table width="778" border="0" height="450px"  align="center" cellpadding="0" 
+    cellspacing="0" style="background-color: #F3F3EF">
+<tr>
+<td valign=top>
+<div style="overflow:auto">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <p align="justify">
+            <font style="FONT: 8pt/11pt Verdana">&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+        <p align="justify">
+            &nbsp;</p>
+        <p align="justify">
+            &nbsp;</p>
+        
+    </asp:ContentPlaceHolder>
+</div>
+</td>
+</tr>
+</table> 
+
+
+<table border="0" align="center" cellpadding="0" cellspacing="0" 
+        style="width: 778px">
+  <tr> 
+    <td bgcolor="#CCCCCC">
+      <div align="center" style="background-color: #2C79B4">
+          <font size="1" face="Verdana, Arial, Helvetica, sans-serif">
+          <span class="style2">&nbsp;© All Rights Reserved</span></font></div>
+    </td>
+  </tr>
+</table>
+</form>
+
+</BODY>
+</html>
